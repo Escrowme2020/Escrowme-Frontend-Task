@@ -1,0 +1,200 @@
+:root {
+  --bg-color: #f4f4f4;
+  --pri-color: #88d0e9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  font-size: 1.5rem;
+  /*border: 1px solid black;*/
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+/***
+******* Header
+***/
+.header {
+  display: grid;
+  height: 4rem;
+  background: var(--pri-color);
+  padding: 0 1rem;
+  grid-template-columns: 2fr 4fr 1fr 1fr;
+  grid-gap: 1rem;
+  /*border: 1px solid black;*/
+}
+
+.logo {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.nextbrain {
+  color: white;
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+.signup {
+  background: white;
+  box-shadow: 0 0 2rem var(--pri-color);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 1rem;
+  height: 3rem;
+  margin: auto 0;
+  color: var(--pri-color);
+  /*border: 1px solid black;*/
+}
+
+.login {
+  background: white;
+  box-shadow: 0 0 2rem var(--pri-color);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 1rem;
+  height: 3rem;
+  margin: auto 0;
+  color: var(--pri-color);
+  /*border: 1px solid black;*/
+}
+
+
+/***
+******* Login Content
+****/
+.form__content {
+  width: 60%;
+  margin: 15rem auto;
+  padding: 3rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 4rem var(--bg-color);
+  background: white;
+  /*border: 1px solid black;*/
+}
+
+.form__header {
+  text-align: center;
+  font-family: arial;
+  color: black;
+  font-size: 3rem;
+  color: var(--pri-color);
+}
+
+.form__temp {
+  margin: .5rem 2rem;
+  /*border: 1px solid black;*/
+}
+
+.form__input {
+  width: 95%;
+  height: 3rem;
+  margin: 1rem 0;
+  padding: 0 .5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--pri-color);
+  font-family: times;
+  box-shadow: 0 0 2rem var(--bg-color);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 2px solid red;
+  box-shadow: 0 0 2rem #cccccc;
+}
+
+.login__btn {
+  width: 100%;
+  background: var(--pri-color);
+  height: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem var(--bg-color);
+  color: white;
+  text-align: center;
+  font-family: times;
+  border: none;
+}
+
+.forgot__password--text {
+  color: var(--pri-color);
+  font-size: 1rem;
+  display: grid;
+  justify-content: end;
+}
+
+.active__black:focus {
+  background: white;
+  outline: var(--pri-color);
+  box-shadow: 0 0 2rem #cccccc;
+  font-weight: 900;
+  transition: background 2s;
+  color: black;
+}
+
+.active__black:active {
+  background: white;
+  outline: var(--pri-color);
+  box-shadow: 0 0 2rem #cccccc;
+  font-weight: 900;
+  transition: background .5s;
+  color: black;
+}
+
+
+/***
+****** Footer
+***/
+.footer {
+  height: 25rem;
+  width: 100%;
+  background: var(--pri-color);
+  padding: 1rem 0 0 0;
+  /*position: absolute;
+  bottom: 0;*/
+}
+
+.footer__content {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  color: white;
+}
+
+.footer__content--section {
+  display: grid;
+  justify-content: center;
+}
+
+.footer__copyright {
+  height: 20%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background: #72c5e2;
+}
