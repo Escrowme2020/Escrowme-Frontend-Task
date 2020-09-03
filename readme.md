@@ -1,6 +1,14 @@
 # Escrowme Front-end Task
 
-This repo is for building and compiling all the front-end code for this project
+This branch is created for the backend part of Escrome
+Progressing from registration
+
+
+## Movement of project
+
+Built with Django
+Using Argon2 secured password hasher
+
 
 # Author
-Fasasi Toheeb
+Netrobe alias n3trob3 on GitHub
