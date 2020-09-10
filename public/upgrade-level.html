@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/768min.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/768wide-screen.css" />
+    <link rel="shortcut icon" href="#" type="image/png">
+    <script defer src="./fontawesome/js/all.js"></script>
+    <title>Dashboard - Escrowme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="dashboard__header">
+        <div class="logo">
+          logo
+        </div>
+        <div class="nextbrain">nextbrain project</div>
+       <div class="user__level">1st Level</div>
+       <div class="user__avatar">
+         <img class="user__avatar--pics" src="./img/toheeb.jpeg">
+         <p class="user__username">Toheeb <i id="down" class="fas fa-angle-down"></i></p>
+          <div class="drop__down">
+            <div class="drop__down--content"><i class="fa fa-user"></i> <span class="drp__padding"><a href="#">Profile</a></span></div>
+            <div class="drop__down--content"><i class="fab fa-bitcoin"></i><span class="drp__padding"><a href="#">Buy / Sell</a></span></div>
+            <div class="drop__down--content"><i class="fa fa-paper-plane"></i> <span class="drp__padding"><a href="#">Send / Receive</a></span></div>
+            <div class="drop__down--content"><i class="far fa-question-circle"></i> <span class="drp__padding"><a href="#">Help</a></span></div>
+            <div class="drop__down--content"><i class="fas fa-sign-out-alt"></i> <span class="drp__padding"><a href="#">Sign out</a></span></div>
+          </div>
+       </div>
+      </div>
+      
+      
+      <!-- <input type="file" accept="image/*" capture="environment">
+      -->
+      <!-- Content -->
+      <div class="profile__container">
+        <div class="profile__sidebar">
+          <div id="0" class="profile__sidebar--text">
+            <i class="fas fa-user-cog"></i> <span id="0" class="profile__margin"><a href="/profile.html">Account Settings</a></span>
+          </div>
+          <div id="1" class="profile__sidebar--text">
+            <i class="fas fa-chart-line"></i> <span id="1" class="profile__margin"><a href="transaction.html">Transactions</a></span>
+          </div>
+          <div id="2" class="profile__sidebar--text profile__active">
+            <i class="fas fa-level-up-alt"></i> <span id="2" class="profile__margin"><a href="upgrade-level.html">Upgrade Level</a></span>
+          </div>
+          <div id="3" class="profile__sidebar--text">
+            <i class="fas fa-question-circle"></i> <span id="3" class="profile__margin"><a href="security-question.html">Security Question</a></span>
+          </div>
+        </div>
+        <div class="profile__content">
+          <div class="profile__content--container">
+            <div class="profile__content--header">Upgrade Level (2nd)</div>
+            <div class="profile__content--section">
+              <form id="id__card--form">
+                <div class="profile__settings">
+                  <select id="select__id--card" class="select__id--card--class">
+                    <option value="None">None</option>
+                    <option value="National Identity Card">National Identity Card</option>
+                    <option value="Driver license">Driver license</option>
+                    <option values="Voter Card">Voter Card</option>
+                  </select>
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">ID Front Image</label><br>
+                  <input id="image" type="file" accept="image/*" class="">
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">ID Back Image</label><br>
+                  <input id="image" type="file" accept="image/*" class="">
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">Clear Face Picture</label><br>
+                  <input id="image" type="file" accept="image/*" capture class="">
+                </div>
+                <div class="profile__settings">
+                <input type="submit" class="update__profile--btn active__black" value="Send">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="profile__content--container">
+            <div class="profile__content--header">Upgrade Level (3nd)</div>
+            <div class="profile__content--section">
+              <form id="id__card--form">
+                <div class="profile__settings">
+                  <select id="select__id--card" class="select__id--card--class">
+                    <option value="None">None</option>
+                    <option value="National Identity Card">National Identity Card</option>
+                    <option value="Driver license">Driver license</option>
+                    <option values="Voter Card">Voter Card</option>
+                  </select>
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">ID Front Image</label><br>
+                  <input id="image" type="file" accept="image/*" class="">
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">ID Back Image</label><br>
+                  <input id="image" type="file" accept="image/*" class="">
+                </div>
+                <div class="profile__settings">
+                  <label id="id__card--label" for="image">Clear Face Picture</label><br>
+                  <input id="image" type="file" accept="image/*" capture class="">
+                </div>
+                <div class="profile__settings">
+                <input type="submit" class="update__profile--btn active__black" value="Send">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer__content">
+          <div class="footer__content--section">section 1</div>
+          <div class="footer__content--section">section 2</div>
+          <div class="footer__content--section">section 3</div>
+        </div>
+        <div class="footer__copyright">©nextbrain</div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

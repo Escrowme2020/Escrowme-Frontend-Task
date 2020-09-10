@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/768min.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/768wide-screen.css" />
+    <link rel="shortcut icon" href="#" type="image/png">
+    <script defer src="./fontawesome/js/all.js"></script>
+    <title>Dashboard - Escrowme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="dashboard__header">
+        <div class="logo">
+          logo
+        </div>
+        <div class="nextbrain">nextbrain project</div>
+       <div class="user__level">1st Level</div>
+       <div class="user__avatar">
+         <img class="user__avatar--pics" src="./img/toheeb.jpeg">
+         <p class="user__username">Toheeb <i id="down" class="fas fa-angle-down"></i></p>
+          <div class="drop__down">
+            <div class="drop__down--content"><i class="fa fa-user"></i> <span class="drp__padding"><a href="#">Profile</a></span></div>
+            <div class="drop__down--content"><i class="fab fa-bitcoin"></i><span class="drp__padding"><a href="#">Buy / Sell</a></span></div>
+            <div class="drop__down--content"><i class="fa fa-paper-plane"></i> <span class="drp__padding"><a href="#">Send / Receive</a></span></div>
+            <div class="drop__down--content"><i class="far fa-question-circle"></i> <span class="drp__padding"><a href="#">Help</a></span></div>
+            <div class="drop__down--content"><i class="fas fa-sign-out-alt"></i> <span class="drp__padding"><a href="#">Sign out</a></span></div>
+          </div>
+       </div>
+      </div>
+      
+      
+      <!-- <input type="file" accept="image/*" capture="environment">
+      -->
+      <!-- Content -->
+      <div class="profile__container">
+        <div class="profile__sidebar">
+          <div id="0" class="profile__sidebar--text">
+            <i class="fas fa-user-cog"></i> <span id="0" class="profile__margin"><a href="/profile.html">Account Settings</a></span>
+          </div>
+          <div id="1" class="profile__sidebar--text profile__active">
+            <i class="fas fa-chart-line"></i> <span id="1" class="profile__margin"><a href="transaction.html">Transactions</a></span>
+          </div>
+          <div id="2" class="profile__sidebar--text">
+            <i class="fas fa-level-up-alt"></i> <span id="2" class="profile__margin"><a href="upgrade-level.html">Upgrade Level</a></span>
+          </div>
+          <div id="3" class="profile__sidebar--text">
+            <i class="fas fa-question-circle"></i> <span id="3" class="profile__margin"><a href="security-question.html">Security Question</a></span>
+          </div>
+        </div>
+        <div class="profile__content">
+          <div class="profile__content--container">
+            <div class="profile__content--header">Transaction History</div>
+            <div class="profile__content--section">
+              <div class="profile__filter--container">
+                <div class="filter__text">Filter</div>
+                <form id="transaction__filter">
+                  <div class="profile__settings">
+                    <select id="select__transaction--filter" class="select__transaction--class">
+                      <option value="All">All</option>
+                      <option value="Date">Date</option>
+                      <option values="Active Trade">Active Trade</option>
+                      <option values="Cancelled">Cancelled</option>
+                      <option values="Buy">Buy</option>
+                      <option values="Sell">Sell</option>
+                      <option values="Successful">Successful</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="transaction__history">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Crypto Size</th>
+                      <th>Rate</th>
+                      <th>Fee</th>
+                      <th>Method</th>
+                      <th>Patner</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sell</td>
+                      <td>200</td>
+                      <td>0.00012</td>
+                      <td>$340</td>
+                      <td>0.2%</td>
+                      <td>Paypal</td>
+                      <td>Ayo</td>
+                      <td>Completed</td>
+                      <td>20-12-2020</td>
+                      <td>5:12am</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="export__csv active__black">Export Transaction to CSV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <div class="footer__content">
+          <div class="footer__content--section">section 1</div>
+          <div class="footer__content--section">section 2</div>
+          <div class="footer__content--section">section 3</div>
+        </div>
+        <div class="footer__copyright">©nextbrain</div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
