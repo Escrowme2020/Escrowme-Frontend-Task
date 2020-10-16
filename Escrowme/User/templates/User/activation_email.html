@@ -1,0 +1,16 @@
+{% autoescape off %}
+Hi {{ user.username }},
+
+You are getting the mail from us because you signed up on our website, Xcrome. This is an automatic email so you can't reply.
+
+Please click the following link to confirm your registration:
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+Do not share your link with anyone else, it might compromise your security, keep it undisclosed.
+
+Thank, for registering on our service.
+Xcrome
+nextbrain@mail.io
+Lagos, Nigeria
+{% endautoescape %}

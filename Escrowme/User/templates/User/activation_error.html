@@ -1,0 +1,17 @@
+{% extends 'User/user_base.html '%}
+{% block user %}
+  <!-- Resend confirmation link Content -->
+  <div class="form__content">
+    <div class="form__header">
+      Activation Error <i class="fas fa-times"></i>
+    </div>
+    
+    <form class="form">
+      <div class="text-info">
+        <p>Error encountered while processing user. User account does not exist, kindly create a new account to be able to trade with us or submit email to get another activation link sent to you.</p>
+      </div>
+      <a href="{% url 'register' %}" class="link_text">Register</a>
+      <a href="{% url 'resend_email' %}" class="link_text">Resend Link</a>
+    </form>
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'User/user_base.html '%}
+{% block user %}
+  <!-- Resend activation link Content -->
+  <div class="form__content">
+    <div class="form__header">
+      Resend activation link
+    </div>
+    <form class="form" method="POST">
+      {% csrf_token %}
+      <div class="text-info">
+        <p>Please provide the email you used to signup here to receive an activation link again.</p>
+      </div>
+
+      {% for field in user %}
+        <div class="form__temp">
+          <label for="{{ field.name }}">{{ field.label }}</label><br>
+           {% if field.errors %}
+            <style type="text/css">
+              .form__input[name='{{ field.name }}']{
+                border-bottom: 3px solid red;
+              }
+            </style>
+           {% endif %}
+          <input type="email" name="{{ field.name }}" class="form__input" value="{% if field.value %}{{ field.value }}{% endif %}" required>
+          {% if field.errors %}
+             <small class="help" style="color: #ff9f9f">
+                {% for i in field.errors %}
+                  {{ i }}<br>
+                {% endfor %}
+             </small>
+          {% else %}
+            <small class="help">{{ field.help_text|safe }}</small>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      <input type="submit" class="submit__btn" value="Resend">
+    </form>
+  </div>
+{% endblock %}

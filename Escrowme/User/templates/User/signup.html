@@ -1,0 +1,59 @@
+{% extends 'User/user_base.html '%}
+{% block user %}
+  <!-- Signup Content -->
+  <div class="form__content">
+    <div class="form__header">
+      Register
+    </div>
+    
+    <form class="form" method="POST">
+      {% csrf_token %}
+     <!--  <div class="form__temp">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" class="form__input" placeholder="example@nextbrain.io" required>
+        <small class="help">This is an extra information</small>
+      </div>
+      <div class="form__temp">
+        <label for="phone-number">Phone Number</label><br>
+        <input type="number" name="phoneno" class="form__input" placeholder="+234123456789" required>
+        <small class="help">This is an extra information</small>
+      </div>
+      <div class="form__temp">
+        <label for="password">Password</label><br>
+        <input type="password" name="password" class="form__input" placeholder="********" minlength="8" required>
+        <small class="help">This is an extra information</small>
+      </div>
+      <div class="form__temp">
+        <label for="password-confirm">Password Confirm</label><br>
+        <input type="password" name='password2' class="form__input" placeholder="********" minlength="8" required>
+        <small class="help">This is an extra information</small>
+      </div> -->
+
+      {% for field in user %}
+        <div class="form__temp">
+          <label for="{{ field.name }}">{{ field.label }}</label><br>
+           {% if field.errors %}
+            <style type="text/css">
+              .form__input[name='{{ field.name }}']{
+                border-bottom: 3px solid red;
+              }
+            </style>
+           {% endif %}
+          <input type="{% if field.name == 'email' %}email{% elif field.name == 'password' %}password{% elif field.name == 'password2' %}password{% else %}number{% endif %}" name="{{ field.name }}" class="form__input" placeholder="{% if field.name == 'email' %} example@nextbrain.io {% elif field.name == 'password' %} abc123@# {% elif field.name == 'password2' %} abc123@# {% else %} +234123456789 {% endif %}" value="{% if field.value %}{{ field.value }}{% endif %}" required>
+          {% if field.errors %}
+             <small class="help">
+               {% for i in field.errors %}
+                {{ i }} <br>
+               {% endfor %}
+             </small>
+          {% else %}
+            <small class="help">This is an extra information</small>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      <input type="submit" class="submit__btn" value="Signup">
+      <a href="#" class="link_text">Login</a>
+    </form>
+  </div>
+{% endblock %}

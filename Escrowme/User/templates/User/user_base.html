@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>Register - Escrowme</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="header">
+        <a href="#" class="nextbrain"><span></span><h1>Xcrome</h1></a>
+        <a href="signup.html" class="signup">Register</a>
+        <a href="login.html" class="login">Login</a>
+      </div>
+
+      <!-- Alerts -->
+
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">{{message}}</div>
+        {% endfor %}
+      {% endif %}
+      
+      <!-- Main User Content -->
+      {% block user %}
+      {% endblock %}
+      
+      <!-- Footer -->
+      <div class="footer">
+        <p>Made with love and creativity by <a href="#">NextBrain</a></p>
+      </div>
+    </div>
+  </body>
+</html>

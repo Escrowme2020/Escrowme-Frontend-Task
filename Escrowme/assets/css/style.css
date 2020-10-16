@@ -1,0 +1,247 @@
+:root {
+  --bg-color: #f4f4f4;
+  --pri-color: #88d0e9;
+  --darkblue: #1b262c;
+  --blue: #0f4c75;
+  --skyblue: #3282b8;
+  --lightblue: #bbe1fa;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face{
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: 'Montserrat-Regular';
+}
+
+@font-face{
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: 'Montserrat-Bold';
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: var(--darkblue);
+  font-family: 'Montserrat-Regular';
+}
+
+/***
+******* Header
+***/
+.header {
+  display: flex;
+  background: var(--skyblue);
+  padding: 0 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nextbrain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.nextbrain span{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--blue);
+  margin: 0 10px;
+}
+.nextbrain h1{
+  display: inline-block;
+  font-family: 'Montserrat-Bold';
+  color: #fff;
+}
+
+.signup{
+  margin-left: auto;
+}
+.signup, .login {
+  background: var(--blue);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 4rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  transition: .3s;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.signup:hover, .login:hover{
+  transform: translateY(-2px);
+  background: #fff;
+  color: var(--blue);
+}
+.login{
+  margin-left: 10px;
+}
+
+
+/* Codes for alert messages */
+
+.alert{
+  width: 98%;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.2rem;
+}
+.alert::after{
+  content: 'Reload page to remove messages';
+  position: absolute;
+  right: .3rem;
+  bottom: .3rem;
+  text-decoration: underline;
+  font-size: .7rem;
+}
+.alert-warning{
+  background: orange;
+  color: var(--blue);
+}
+.alert-success{
+  background: lightgreen;
+  color: var(--darkblue);
+}
+
+
+
+/***
+******* Login Content
+****/
+.form__content {
+  max-width: 400px;
+  margin: 15rem auto;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  background: var(--skyblue);
+  /*border: 1px solid black;*/
+}
+
+.form__header {
+  text-align: center;
+  font-family: 'Montserrat-Bold';
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin-bottom: 2rem;
+}
+
+.form__temp {
+  margin: 1.6rem 0;
+}
+.form__temp label{
+  font-weight: bold;
+  color: var(--darkblue);
+  font-size: 1rem;
+}
+.form__temp small{
+  color: var(--lightblue);
+  font-style: italic;
+  display: block;
+  text-align: right;
+}
+
+.form__temp.error .form__input{
+  border-bottom: 3px solid red;
+}
+
+.form__input {
+  width: 100%;
+  margin: .3rem 0;
+  padding: .8rem .5rem;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--blue);
+  font-family: 'Montserrat-Regular';
+  color: var(--darkblue);
+  font-size: 1.2rem;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.submit__btn {
+  background: var(--blue);
+  border-radius: 4rem;
+  color: white;
+  padding: 10px 25px;
+  font-family: 'Montserrat-Bold';
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  transition: .3s;
+}
+
+.link_text {
+  color: var(--lightblue);
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: .3s;
+  transform-origin: center;
+}
+.link_text:hover{
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.submit__btn:focus, .submit__btn:active, .submit__btn:hover {
+  background: var(--darkblue);
+  outline: none;
+  font-weight: 900;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/***
+****** Footer
+***/
+.footer {
+  width: 100%;
+  background: var(--blue);
+  padding: 1rem;
+  text-align: center;
+  color: var(--lightblue);
+}
+.footer a{
+  color: var(--skyblue);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .3s;
+}
+.footer a:hover{
+  color: #fff;
+}
