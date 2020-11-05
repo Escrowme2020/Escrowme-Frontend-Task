@@ -3,22 +3,22 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/768min.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/768wide-screen.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
     <link rel="shortcut icon" href="#" type="image/png">
     <script defer src="./fontawesome/js/all.js"></script>
-    <title>Login - Escrowme</title>
+    <title>Login - Xcrowme</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- Header -->
       <div class="header">
         <div class="logo">
-          logo
+          <img class="escrowme__logo--image" src="/img/logo.png">
         </div>
-        <div class="nextbrain">nextbrain project</div>
+        <div class="nextbrain"></div>
         <a href="signup.html" class="signup">sigup</a>
-        <a href="login.html" class="login">login</a>
+        <a href="login.html" class="login login__active">login</a>
       </div>
       
       <!-- Login Content -->
@@ -34,7 +34,7 @@
           </div>
           <div class="form__temp">
             <label for="password">Password</label><br>
-            <input type="password" class="form__input" placeholder="********" minlength="8" required>
+            <input type="password" class="form__input" placeholder="********" required>
           </div>
           <div class="form__temp">
             <input type="submit" class="login__btn active__black" value="Login">
@@ -46,6 +46,44 @@
       </div>
       
       <!-- Footer -->
+      <!--
+      <div class="footer">
+      <div class="footer__content">
+        <div class="footer__content--section">
+          <div class="footer__logo">
+            <img class="es__logo" src="/img/logo.png">
+          </div>
+          <div class="social__media">
+            <a title="Escrowme facebook page" target="_blank" href="https://m.facebook.com/Escrowme-2387271738222517/"><i class="fab fa-facebook-square"></i><span class="space"></span></a>
+            <i class="fab fa-whatsapp-square"></i><span class="space"></span>
+            <i class="fab fa-linkedin-in"></i><span class="space"></span>
+            <i class="fab fa-twitter-square"></i><span class="space"></span>
+            <i class="fas fa-redit"></i>
+          </div>
+        </div>
+        <div class="footer__content--section">
+          <p>Company</p>
+          <a href="#">About us</a>
+          <a href="#">Cryptocurrency</a>
+          <a href="#">Blog</a>
+        </div>
+        
+        <div class="footer__content--section">
+          <p>Community</p>
+          <a href="https://github.com/Escrowme2020">Github</a>
+          <a href="#">Discord</a>
+          <a href="#">Stack Overflow</a>
+        </div>
+        <div class="footer__content--section">
+          <p>Feedback</p>
+          <a href="/index.html">Home</a>
+          <a href="#">Signup</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <div class="footer__copyright">©xcrowme</div>
+    </div> -->
+      <!--
       <div class="footer">
         <div class="footer__content">
           <div class="footer__content--section">section 1</div>
@@ -53,7 +91,7 @@
           <div class="footer__content--section">section 3</div>
         </div>
         <div class="footer__copyright">©nextbrain</div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

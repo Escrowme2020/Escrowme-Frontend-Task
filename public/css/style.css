@@ -1,6 +1,7 @@
 :root {
   --bg-color: #f4f4f4;
-  --pri-color: #88d0e9;
+  --pri-color: #3f6b94;
+  --pri-2-color: #ef7d32;
 }
 
 *,
@@ -13,17 +14,21 @@
 }
 
 /* Colors
-
-#f4f4f4 Background
-#88d0e9 
+************** black family
+#f4f4f4
 #cccccc
+
+************* Blue family
+#88d0e9 
 #72c5e2
+#c1e8f5
 */
 .wrapper {
   width: 100%;
   height: 100%;
   background: var(--bg-color);
   font-size: 1.5rem;
+  position: relative;
   /*border: 1px solid black;*/
 }
 
