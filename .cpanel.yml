@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/cifjdtkaobir/public_html/
-    - /bin/cp /public/login.html $DEPLOYPATH
+    - /bin/cp login.html $DEPLOYPATH
