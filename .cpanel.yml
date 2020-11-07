@@ -2,4 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/cifjdtkaobir/public_html/
-    - /bin/cp /public/* $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp /css/* $DEPLOYPATH
+    - /bin/cp /js/* $DEPLOYPATH
+    - /bin/cp /img/* $DEPLOYPATH
