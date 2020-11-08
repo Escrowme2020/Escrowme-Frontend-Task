@@ -1318,7 +1318,7 @@ th, td {
   background: white;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   align-content: center;
   justify-content: center;
 }
@@ -1346,13 +1346,15 @@ th, td {
 }
 
 .landing__signup {
-  background: linear-gradient(30deg, var(--pri-color), var(--pri-2-color));
   color: white;
+  background: var(--pri-2-color);
+  /*background: linear-gradient(30deg, var(--pri-color), var(--pri-2-color));*/
 }
 
 .landing__login {
-  background: linear-gradient(30deg, var(--pri-color), var(--pri-2-color));
   color: white;
+  background: var(--pri-color);
+  /*background: linear-gradient(30deg, var(--pri-color), var(--pri-2-color));*/
 }
 
 
