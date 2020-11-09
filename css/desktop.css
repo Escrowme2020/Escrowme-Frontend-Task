@@ -168,7 +168,7 @@
   border-bottom: 2px solid var(--bg-color);
   padding: 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
 }
 /*
 "Merriweather", "Serif"
@@ -213,6 +213,10 @@
 
 .footer__copyright span:nth-child(2) {
   justify-self: end;
+}
+
+.footer__content > div:last-child p {
+  margin: 1rem 0;
 }
 
 .xcrowme__logo {

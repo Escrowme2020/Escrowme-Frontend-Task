@@ -238,6 +238,12 @@ body {
   justify-self: end;
 }
 
+
+.footer__content > div:last-child p {
+  margin: 1rem 0;
+}
+
+
 .xcrowme__logo {
   width: 100%;
   height: 3rem;
