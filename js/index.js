@@ -6,23 +6,31 @@ const profileSidebar = document.querySelector(".profile__sidebar");
 const headerMenu = document.querySelector(".header__menu");
 
 const navigation = document.querySelector(".navigation");
+
+const landingMenu = document.querySelector(".landing__menu");
+
+const landingLinkContainer = document.querySelector(".landing__link__container");
+
 const sendReceiveHeader = document.querySelector(".send__receive--header");
 
 
 
 // User drop down Handler Function
-userDropdown.addEventListener("click", () => {
-  const el = document.querySelector(".drop__down");
-  const down = document.getElementById('down');
-  
-  if(el.style.display === "") {
-    el.style.display = "grid";
-    down.className = "fas fa-angle-up";
-  } else if (el.style.display === "grid") {
-    el.style.display = "";
-    down.className = "fas fa-angle-down";
-  };
-});
+if(userDropdown) {
+  userDropdown.addEventListener("click", () => {
+    const el = document.querySelector(".drop__down");
+    const down = document.getElementById('down');
+    
+    if(el.style.display === "") {
+      el.style.display = "grid";
+      down.className = "fas fa-angle-up";
+    } else if (el.style.display === "grid") {
+      el.style.display = "";
+      down.className = "fas fa-angle-down";
+    };
+  });
+    
+}
 
 
 // User profile Handler function
@@ -56,6 +64,19 @@ if(headerMenu) {
 				headerMenu.children[0].innerHTML = '<i id="bars" class="fas fa-times"></i>';
 			} else {
 				headerMenu.children[0].innerHTML = '<i id="bars" class="fas fa-bars"></i>';
+			}
+  });
+}
+
+// Landing Drop Down
+if(landingMenu) {
+  landingMenu.addEventListener("click", e => {
+    landingLinkContainer.classList.toggle('active');
+		landingMenu.classList.toggle('active');
+	  if(landingMenu.classList.contains('active')){
+				landingMenu.children[0].innerHTML = '<i id="bars" class="fas fa-times"></i>';
+			} else {
+				landingMenu.children[0].innerHTML = '<i id="bars" class="fas fa-bars"></i>';
 			}
   });
 }

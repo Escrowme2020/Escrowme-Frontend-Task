@@ -9,5 +9,5 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp login.html $DEPLOYPATH
     - /bin/cp signup.html $DEPLOYPATH
-    - /bin/cp forgot.html $DEPLOYPATH
+    - /bin/cp forgot-password.html $DEPLOYPATH
     - /bin/cp reset-password.html $DEPLOYPATH

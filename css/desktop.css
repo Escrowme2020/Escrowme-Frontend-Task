@@ -194,6 +194,10 @@
   font-size: 1rem;
 }
 
+.footer__content > div:nth-child(2) ul li {
+  font-size: 2rem;
+}
+
 .footer__content > div p {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -1310,6 +1314,10 @@ th, td {
      ()+*+*++*+++*+*++*+*+++*++()
 *******+++*****************************
 *******+++****************************/
+/* This turn off showing the meneu when in desktop mode */
+.landing__menu {
+  display: none;
+}
 
 .landing__page__header {
   /*width: 100%;*/
@@ -1317,14 +1325,29 @@ th, td {
   padding: 0 1rem;
   background: white;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1.5fr 5fr;
+  grid-column-gap: 4rem;
   align-content: center;
   justify-content: center;
 }
 
-.landing__page__header  > a {
-  height: 2.5rem;
+.landing__link__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.landing__logo {
+  height: 3rem;
+}
+
+.landing__logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.landing__link__container  > a {
+  height: 3rem;
   border-radius: .5rem;
   border: 1px solid var(--pri-color);
   /*background: var(--bg-color);*/
@@ -1341,9 +1364,6 @@ th, td {
   background: linear-gradient(30deg, var(--pri-color), var(--pri-2-color));
 }
 
-.landing__logo {
-  height: 2.5rem;
-}
 
 .landing__signup {
   color: white;
