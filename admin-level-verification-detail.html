@@ -9,29 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="#" type="image/png">
     <script defer src="./fontawesome/js/all.js"></script>
-    <title>Dashboard - Xcrowme</title>
+    <title>Admin Dashboard - Xcrowme</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <div class="dashboard__header">
+      <div class="admin__header">
         <div class="header__menu"><i id="bars" class="fas fa-bars"></i></div>
         <div class="logo">
           <img class="escrowme__logo--image" src="/img/logo.png">
         </div>
         <div class="nextbrain"></div>
-        <div class="user__level">1st Level</div>
-        <div class="user__avatar">
-          <img class="user__avatar--pics" src="./img/toheeb.jpeg">
-          <p class="user__username">Toheeb <i id="down" class="fas fa-angle-down"></i></p>
-          <div class="drop__down">
-            <div class="drop__down--content"><i class="fa fa-user"></i> <span class="drp__padding"><a href="#">Profile</a></span></div>
-            <!--<div class="drop__down--content"><i class="fab fa-bitcoin"></i><span class="drp__padding"><a href="#">Buy / Sell</a></span></div>
-            <div class="drop__down--content"><i class="fa fa-paper-plane"></i> <span class="drp__padding"><a href="#">Send / Receive</a></span></div> -->
-            <div class="drop__down--content"><i class="far fa-question-circle"></i> <span class="drp__padding"><a href="#">Help</a></span></div>
-            <div class="drop__down--content"><i class="fas fa-sign-out-alt"></i> <span class="drp__padding"><a href="#">Sign out</a></span></div>
-          </div>
-        </div>
+        <div class="admin__panel">Admin Panel</div>
       </div>
       
       <!-- Left Drop Down -->
@@ -88,84 +77,52 @@
         </ul>
       </div>
       
-      <!-- Content -->
-      <div class="basic__user--content">
-        <div class="welcome__onboard">Welcome Onboard, Masterd226</div>
-        <div class="user__detail">
-          <div class="user__detail--content">
-            <img class="user__detail--pics" src="./img/toheeb.jpeg">
-          </div>
-          <div class="user__detail--wallet">
-            <p>Fasasi Toheeb</p>
-            <p>0 BTC</p>
+      
+      <div class="level__verification__header">
+        <h3>Level Verification Detail Page</h3>
+      </div>
+      <!--<div class="admin__content">-->
+        <div class="level__verification--detail">
+          <div class="level__verification--content">
+            <p class="level__verification--level">Level 2 verification</p>
+            <p class="level__verification--username">Fasasi Toheeb</p>
+            <div class="level__verification--status">pending</div>
+            <div class="level__verification--requirement">
+              <p class="level__verification__requirement--title">Requirements</p>
+              <ol>
+                <li>User must signups</li>
+                <li>User must signups</li>
+                <li>User must signups</li>
+              </ol>
+            </div>
+            <div class="level__verification--images">
+              <div>
+                <p>National ID Card</p>
+                <img src="img/img-1.jpg" alt="image">
+              </div>
+              <div>
+                <p>Voters card</p>
+                <img src="img/img-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="accept__reject--action">
+              <button class="btn__accept">Accept</button>
+              <button class="btn__reject">Reject</button>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <!-- User Menu -->
-      
-      <!--<div class="user__menu">
-        <div class="menu__header">User Menu</div>
-        <div class="user__menu--container">
-          <div class="menu">
-            <div class="btc">
-              <i class="fas fa-money-bill"></i>
+        <div class="overlay"></div>
+        <div class="reject__modal">
+          <div>Rejection Message</div>
+          <form>
+            <textarea></textarea>
+            <div class="reject__modal--action">
+              <button class="btn__cancel">Cancel</button>
+              <button class="btn__proceed">Proceed</button>
             </div>
-            <div class="menu__text"><a href="#">Wallet</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="fa fa-user"></i>
-            </div>
-            <div class="menu__text"><a href="profile.html">Profile</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="fab fa-bitcoin"></i>
-            </div>
-            <div class="menu__text"><a href="#">Buy</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="fab fa-bitcoin"></i>
-            </div>
-            <div class="menu__text"><a href="#">Sell</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="fa fa-paper-plane"></i>
-            </div>
-            <div class="menu__text"><a href="#">Send</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="fas fa-sign-out-alt"></i>
-            </div>
-            <div class="menu__text"><a href="#">Receive</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="far fa-question-circle"></i>
-            </div>
-            <div class="menu__text"><a href="#">Help</a></div>
-          </div>
-          <div class="menu">
-            <div class="btc">
-              <i class="far fa-envelope"></i>
-            </div>
-            <div class="menu__text"><a href="#">Message</a></div>
-          </div>
+          </form>
         </div>
-      </div>-->
-      
-      <div class="dashboard__content">
-        NO CONTENT
-      </div>
-      
-      <!-- User Activities -->
-      <div class="user__activity">
-        NO USER ACTIVITY
-      </div>
+      <!--</div>-->
       
       <!-- Footer -->
       <div class="footer">
@@ -213,5 +170,6 @@
       </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/notification-popup.js"></script>
   </body>
 </html>
