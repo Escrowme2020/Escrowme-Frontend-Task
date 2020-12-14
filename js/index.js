@@ -5,6 +5,9 @@ const profileSidebar = document.querySelector(".profile__sidebar");
 
 const headerMenu = document.querySelector(".header__menu");
 
+const landingPageHeader = document.querySelector(".landing__page__header");
+const footer = document.querySelector(".footer");
+
 const navigation = document.querySelector(".navigation");
 
 const landingMenu = document.querySelector(".landing__menu");
@@ -12,8 +15,6 @@ const landingMenu = document.querySelector(".landing__menu");
 const landingLinkContainer = document.querySelector(".landing__link__container");
 
 const sendReceiveHeader = document.querySelector(".send__receive--header");
-
-
 
 // User drop down Handler Function
 if(userDropdown) {
@@ -57,6 +58,7 @@ if(profileSidebar) {
 
 // Left Drop Down
 if(headerMenu) {
+
   headerMenu.addEventListener("click", e => {
     navigation.classList.toggle('active');
 		headerMenu.classList.toggle('active');
@@ -68,7 +70,9 @@ if(headerMenu) {
   });
 }
 
+
 // Landing Drop Down
+//window.addEventListener("load", (e) => {
 if(landingMenu) {
   landingMenu.addEventListener("click", e => {
     landingLinkContainer.classList.toggle('active');
@@ -80,7 +84,7 @@ if(landingMenu) {
 			}
   });
 }
-
+//});
 // Send Receive Header
 if(sendReceiveHeader) {
   sendReceiveHeader.addEventListener("click", (e) => {
@@ -124,3 +128,67 @@ if(sendReceiveHeader) {
     console.log(e);
   });
 }
+
+// Injecting
+//window.addEventListener("load", (e) => {
+/*
+let template = `
+  <div class="landing__logo">
+    <img class="escrowme__logo--image" src="img/logo1.png">
+  </div>
+`;
+landingPageHeader.insertAdjacentHTML("beforeend", template);*/
+//document.body.innerHTML(template);
+//document.body.insertAdjacentHTML("beforeend", template);
+//document.body.appendChild(template);
+//document.body.appendChild(template.content);
+//});
+
+// Footer
+const html = `
+  <div class="footer__content">
+    <div>
+      <h5>About</h5>
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="term-of-service.html">Term of Service</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="team-members.html">Team Members</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a title="Escrowme facebook page" target="_blank" href="https://m.facebook.com/Escrowme-2387271738222517/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><i class="fab fa-twitter-square"></i></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Support</h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact-support.html">Contact Support</a></li>
+        <li><a href="guides.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Service</h5>
+      <ul>
+        <li><a href="affiliate.html">Affiliate</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Ecrowme</h5>
+      <p>xcrowme is a peer to peer bitcoin marketplace, where buyer and sellers get to meet for business.</p>
+      <img class="xcrowme__logo" src="img/logo-2.jpg">
+    </div>
+  </div>
+  <div class="footer__copyright">
+    <span>xcrowme Team</span>
+    <span>xcrowme Team</span>
+  </div>
+`;
+
+footer.insertAdjacentHTML("beforeend", html);

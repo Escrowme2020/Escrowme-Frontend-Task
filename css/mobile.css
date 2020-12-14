@@ -1604,6 +1604,74 @@ th, td {
   }
 }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.accept__policy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  background: black;
+  color: white;
+  display: grid;
+  align-content: center;
+  font-weight: 700;
+  animation: slideUp 1s linear;
+}
+
+.accept__policy div a {
+  color: var(--pri-2-color);
+  font-weight: 800;
+}
+
+.accept__policy--action {
+  padding: 1rem 0 0 0;
+  margin: 1.5rem 0 1rem;
+  /*border-top: 4px solid var(--pri-color);*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.btn__go {
+  width: 70%;
+  padding: .4rem .2rem;
+  border-radius: .5rem;
+  background: none;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+  background: var(--pri-color);
+  border: none;
+}
+.btn__decline {
+  width: 70%;
+  padding: .7rem .2rem;
+  border-radius: .5rem;
+  background: none;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background: var(--pri-2-color);
+  font-weight: 700;
+}
+
+
+
 
 
 

@@ -1546,6 +1546,71 @@ th, td {
     leftsform: translateY(0);
   }
 }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accept__policy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15rem;
+  padding: 1rem;
+  background: black;
+  color: white;
+  display: grid;
+  align-content: center;
+  font-weight: 700;
+  animation: slideUp 1s linear;
+}
+
+.accept__policy div a {
+  color: var(--pri-2-color);
+  font-weight: 800;
+}
+
+
+.accept__policy--action {
+  padding: 1rem 0 0 0;
+  margin: 3rem 0 1rem;
+  /*border-top: 4px solid var(--pri-color);*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.btn__go {
+  width: 60%;
+  padding: .4rem .2rem;
+  border-radius: .5rem;
+  background: none;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  background: var(--pri-color);
+  border: none;
+}
+.btn__decline {
+  width: 60%;
+  padding: .7rem .2rem;
+  border-radius: .5rem;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background: var(--pri-2-color);
+  font-weight: 700;
+}
+
 
 
 
@@ -2423,7 +2488,7 @@ NOTIFICATION
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 2px solid white;
-  padding: .5rem 0 0 0;
+  padding: .8rem 0 0 0;
   margin: 1rem auto .5rem;
 }
 
@@ -2465,12 +2530,12 @@ NOTIFICATION
 .level__verification__filter--form select {
   width: 7rem;
   height: 2rem;
+  font-size: 1rem;
   font-weight: 500;
   background: var(--pri-color);
   border-left: 3px solid var(--pri-2-color);
   color: white;
 }
-
 
 
 /*level verification details */
@@ -2480,7 +2545,7 @@ NOTIFICATION
 }
 
 .level__verification--content {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 1rem;
   padding: 1rem;
@@ -2675,13 +2740,215 @@ NOTIFICATION
   color: white;
 }
 
+.level__verification--info {
+  width: 87%;
+  padding: 1rem;
+  color: white;
+  line-height: 1.9rem;
+  font-family: "Source sans pro", "Sans-Serif";
+  background: rgba(63,107,148,0.747);
+  margin: 1rem auto;
+}
+
+.payment__verification--box {
+  margin: 0 0 1rem 0;
+  box-shadow: 0 0 .5rem var(--dark-bg-color);
+  border-left: 4px solid var(--pri-color);
+  background: var(--pri-color);
+  border-radius: 1rem;
+  padding: 1rem 0;
+}
+
+.payment__verification--user {
+  width: 90%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  font-weight: 700;
+}
+
+.payment__verification--user p:nth-child(1) {
+  color: white;
+  font-size: 2rem;
+  display: grid;
+  align-content: center;
+}
+
+.payment__verification--user div {
+  background: var(--pri-2-color);
+  width: 70%;
+  padding: .2rem .1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.payment__verification--amount {
+  font-size: 4rem;
+  color: white;
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+.payment__verification--status {
+  /*background: var(--pri-2-color);*/
+  box-shadow: .3rem .5rem .7rem var(--dark-bg-color);
+  padding: .5rem;
+  border-radius: 1rem;
+  color: white;
+  width: 8rem;
+  text-align: center;
+  margin: 0 0 2rem 2rem;
+}
+
+
 .verification__filter--form {
   position: absolute;
   background: var(--pri-color);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: .7rem;
   top: 2.5rem;
-  right: 0;
-  width: 15rem;
+  right: 1rem;
+  width: 20rem;
+  border: 2px solid var(--pri-2-color);
+  animation: zoomIn .3s linear;
   display: none;
+}
+
+
+
+.verification__filter--content {
+  margin: 0 0 1rem 0;
+  padding: 0 0 .5rem .5rem;
+  border-left: 4px solid white;
+  /*border: 1px solid black;*/
+}
+
+.verification__filter--content label {
+  color: white;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.payment__status--verification {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--bg-color);
+  grid-gap: 1rem;
+  margin: 1rem 0 0 0;
+}
+
+.payment__status--verification div input[type="text"] {
+  width: 90%;
+  height: 2rem;
+}
+
+.payment__status--verification div input[type="date"] {
+  width: 90%;
+  height: 2rem;
+}
+
+.verification__filter--content div {
+  font-size: 1.5rem;
+}
+
+/* Payment verification detail page */
+.payment__verification--header {
+  display: grid;
+  margin: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  /*border: 1px solid black;*/
+  justify-content: center;
+}
+
+.payment__verification--buyer div {
+  margin: 1rem 0 0 0;
+  border-radius: 1rem;
+  background: var(--pri-color);
+  padding: 1rem;
+  width: 90%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Source sans pro", "Sans-Serif";
+}
+
+.payment__verification--buyer div p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Merriweather", "Serif";
+}
+
+.payment__verification--buyer div p:nth-child(3) {
+  margin: 0 0 .5rem 0;
+}
+
+.payment__verification--buyer div p:nth-child(4) {
+  
+}
+
+.payment__verification--seller div {
+  width: 90%;
+  margin: 1rem 0 0 0;
+  border-radius: 1rem;
+  background: var(--pri-color);
+  padding: 1rem;
+  color: white;
+  font-family: "Source sans pro", "Sans-Serif";
+}
+
+.payment__verification--seller div p:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Merriweather", "Serif";
+}
+
+.payment__verification--seller div p:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Merriweather", "Serif";
+}
+
+.payment__verification--seller div p:nth-child(3) {
+  margin: 0 0 .5rem 0;
+}
+
+.payment__verification--seller div p:nth-child(4) {
+  margin: 0 0 .5rem 0;
+}
+
+.payment__verification--wrapper h3 {
+  margin: 0 0 .5rem 0;
+}
+
+
+
+.payment__verification--content {
+  border-radius: 1rem;
+  background: var(--pri-color);
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 40% 60%;
+}
+
+.payment__verification--detail {
+  font-family: "Source sans pro", "Sans-Serif";
+  color: white;
+  padding: 1rem;
+  font-weight: 700;
+}
+.payment__verification--detail p {
+  padding: 0 0 .5rem 0;
+}
+
+.payment__verification--screenshot img {
+  width: 95%;
+  height: 20rem;
+  margin: 0 0 1rem 0;
 }
