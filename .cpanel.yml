@@ -7,7 +7,13 @@ deployment:
     - /bin/cp /img $DEPLOYPATH
     - /bin/cp /fontawesome $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp login.html $DEPLOYPATH
-    - /bin/cp signup.html $DEPLOYPATH
-    - /bin/cp forgot-password.html $DEPLOYPATH
-    - /bin/cp reset-password.html $DEPLOYPATH
+    - /bin/cp about-us.html $DEPLOYPATH
+    - /bin/cp term-of-service.html $DEPLOYPATH
+    - /bin/cp team-members.html $DEPLOYPATH
+    - /bin/cp privacy-policy.html $DEPLOYPATH
+    - /bin/cp guides.html $DEPLOYPATH
+    - /bin/cp fees.html $DEPLOYPATH
+    - /bin/cp faq.html $DEPLOYPATH
+    - /bin/cp contact-support.html $DEPLOYPATH
+    - /bin/cp career.html $DEPLOYPATH
+    - /bin/cp affiliate.html $DEPLOYPATH

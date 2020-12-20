@@ -182,12 +182,11 @@ const html = `
     <div>
       <h5>Ecrowme</h5>
       <p>xcrowme is a peer to peer bitcoin marketplace, where buyer and sellers get to meet for business.</p>
-      <img class="xcrowme__logo" src="img/logo-2.jpg">
+      <a href="index.html"><img class="xcrowme__logo" src="img/logo1.png"></a>
     </div>
   </div>
   <div class="footer__copyright">
-    <span>xcrowme Team</span>
-    <span>xcrowme Team</span>
+    
   </div>
 `;
 
