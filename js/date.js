@@ -7,7 +7,7 @@ const time = setInterval(() => {
   const now = new Date().getTime();
   
   // Future Date
-  const countDownDate = new Date("December 20, 2020 11:00:00").getTime();
+  const countDownDate = new Date("December 20, 2020 19:00:00").getTime();
   
   // Difference of the date
   const difference = countDownDate - now;
